@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Old Town";
+  src: url("assets/OldTown.ttf")
+    format(opentype);
+}
+
+
+:root{
+    --primary-color:#F1771A;
+    --secondary-color:#73390D;
+    --tertiary-color:#734C2F;
+    --primary-light:#F4A364;
+    --primary-dark:#BF5F15;
+}
+/**
+Palette: https://scrimba.com/links/hometown-palette
+--primary-color:#F1771A;
+--secondary-color:#73390D;
+--tertiary-color:#734C2F;
+--primary-light:#F4A364
+--primary-dark:#BF5F15
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-size:16px;
+    font-family:"Old Town";
+    background-color:var(--primary-dark);
+    color:whitesmoke;
+}
+
+img {
+    width: 100px;
+}
+
+#wrapper{
+    background-color:whitesmoke;
+    box-shadow:5px 5px 5px black;
+    padding:8px 6px 20px 6px;
+    
+}
+
+#hero-section{
+    background-image:url("images/wellston.jpg");
+    background-size:cover;
+    height:250px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#--hero-title{
+    margin-bottom:15px;
+    font-size:2rem;
+    background-color:var(--tertiary-color);
+    padding:10px 16px;
+    box-shadow:1px 3px 5px black;
+    text-shadow:0 0 2px black; 
+}
+
+#--hero-description{
+    background-color:var(--tertiary-color);
+    font-family: 'Lato', sans-serif;
+    font-size:.75rem;
+    max-width:230px;
+    padding:10px 10px;
+    box-shadow:1px 3px 5px black;
+    text-shadow:0 0 2px black; 
+}
+#--activities-section{
+    background-color:var(--secondary-color);
+    padding:24px 0px;    
+}
+
+#--activities-section h3{
+    font-size:2rem;
+    margin-bottom:18px;
+    text-shadow:0 0 2px black; 
+}
+
+#--activities-flexbox{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.flexed{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:4px 10px;
+}
+
+.--activities-img{
+    border-radius: 50%;
+    width:64px;
+    height:64px; 
+    margin-bottom:10px;   
+}
+
+.--activities-title{
+    font-size:1.22rem;
+    color:var(--primary-color);
+    text-shadow:0 0 2px black;
+    margin-bottom:5px;    
+}
+
+.--activities-description{
+    font-family: 'Lato', sans-serif;
+    font-size:.75rem;
+    font-weight: bold;
+    text-shadow:0 0 2px black; 
+}
+
+#--guide-section{
+    display:flex;
+    width:250px;
+    background-color:var(--primary-light);
+    margin:20px auto;
+    padding:8px 8px 0 8px;
+    border-bottom:8px solid var(--primary-color);
+    color:var(--primary-dark);
+    text-shadow:0 0 2px whitesmoke;
+}
+
+#--guide-title{
+    font-size:1.1rem;
+    margin:12px 0px;
+}
+
+#--guide-description{
+    margin:0 6px;
+    font-family: 'Lato', sans-serif;
+    font-size:.75rem;
+    color:whitesmoke;
+    text-shadow:0 0 2px black;
+}
+
+#--guide-name{
+    margin:12px 0;
+}
+
+#--guide-info-box{
+    order:2;
+}
+
+#--guide-img-box{
+    order:1;
+}
+
+/* @media screen and (min-width:768px){
+    #wrapper{
+        margin:5vh 20vw;
+        border-radius:12px;
+    }
+    
+    #hero-section{
+        border-top-left-radius: 6px;
+        border-top-right-radius:6px;
+    }
+} */
+
+@media(min-width:768px) {
+    #wrapper{
+        margin:5vh 20vw;
+        border-radius:12px;
+    }
+    
+    #hero-section{
+        border-top-left-radius: 6px;
+        border-top-right-radius:6px;
+    }
+  }
